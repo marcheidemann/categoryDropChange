@@ -9,5 +9,11 @@ Additions:
 
 AJAX requesting on drop and clear,
 ATM no Data Handling, just giving some unnessecary data to an php,
-doSomeStuff with it and give it back to the console.log.
+doSomeStuff with it and give it back via console.log on the clientside.
 
+Nice to Have:
+
+- ID Apply Feedback
+- Class Apply Feedback
+- changing multiple Classes (Form Rerendering)
+- Feedback if no class is selected and so dropping is prevented
