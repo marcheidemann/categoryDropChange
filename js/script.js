@@ -137,6 +137,7 @@ function backState(){
     input.append(form1.el);
     ankerSelect.append(form.el);
     multiSelect.hide();
+    $('.field-nDefine label').hide();
 
     var select = document.getElementById('className');
     renderButton("generieren");

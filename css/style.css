@@ -213,17 +213,39 @@ td { vertical-align: top; }
 
 .chromeframe { margin: 0.2em 0; background: #ccc; color: black; padding: 0.2em 0; }
 
-
 /* ==|== primary styles =====================================================
    Author:
    ========================================================================== */
-#droppable { clear:both;display:none; float:left;background: #dadada; width: 150px; height: 150px; padding: 0.5em; float: left; margin: 10px; }
-.macho {width: 640px;}
+
+#droppable { 
+  clear:both;
+  display:none; 
+  float:left;
+  background: #dadada; 
+  width: 150px; 
+  height: 150px; 
+  padding: 0.5em; 
+  float: left; 
+  margin: 10px; 
+}
+
+.macho {
+  width: 640px;
+  margin-top: 23px;
+}
+
+.macho ul li {
+  list-style-type: none;
+}
+
 .input {float:left;}
 .holder {clear:both;}
-.n-definer {float: left;
-margin-top: 28px;
-margin-left: 8px;}
+.n-definer {
+  float: left;
+  margin-top: 3px;
+  margin-left: 8px;
+}
+
 .box {
   height:30px;
   width:30px;
@@ -271,8 +293,9 @@ margin-left: 8px;}
   width: 288px;
 }
 
-
-
+.holder, .holder-color {
+  margin-left:23px;
+}
 
 /* ==|== media queries ======================================================
    EXAMPLE Media Query for Responsive Design.
