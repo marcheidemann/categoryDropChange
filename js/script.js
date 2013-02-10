@@ -131,8 +131,6 @@ function backState(){
     form.on('className:change', function(form, classNameEditor) {
         getValues();
         setDropAreaReadyState();
-        //var className = classNameEditor.getValue();
-        //console.log(className);
     });
     input.append(form1.el);
     ankerSelect.append(form.el);
@@ -141,7 +139,6 @@ function backState(){
 
     var select = document.getElementById('className');
     renderButton("generieren");
-
 
 //
 
