@@ -36,9 +36,11 @@ function render(){
     num = parseInt(input);
     renderDivElements();
     renderColorBoxes();
-    $('.revert').css("visibility","visible");
+    
     if(input <= 0) {
+        event.preventDefault();
     } else {
+        $('.revert').css("visibility","visible");
          $('#droppable').delay(123).fadeIn();
          $('.chzn-select').trigger("liszt:updated");
          form.fields['className'].$el.fadeIn();
@@ -152,7 +154,7 @@ $('.applyClasses').click(function(event){
     classApply();
 });
 
-$('.n-definer').click(function() {
+$('.n-definer').click(function(event) {
     container.empty(),
     colorContainer.empty();
     render();
@@ -175,9 +177,7 @@ $('.n-definer').click(function() {
             data: { 'className': className },
             cache: false,
             success: function(data)
-                {
-                    console.log(data);
-                }
+                {console.log(data); }
             });
         backState();
       }
